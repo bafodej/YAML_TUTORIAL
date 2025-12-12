@@ -1,0 +1,13 @@
+services:
+- name: auth-service
+  url: http://auth.example.com
+  timeout: 30
+- name: payment-service
+  url: http://payment.example.com
+  timeout: 60
+- name: notification-service
+  url: http://notification.example.com
+  timeout: 15
+retry_policy:
+  max_attempts: 3
+  backoff_seconds: 5

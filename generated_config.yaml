@@ -1,0 +1,14 @@
+database:
+  credentials:
+    password: secret123
+    username: admin
+  host: localhost
+  name: myapp_db
+  port: 5432
+features:
+  cache_ttl: 3600
+  enable_cache: true
+server:
+  debug: true
+  host: 0.0.0.0
+  port: 8000
